@@ -1,12 +1,10 @@
 from telebot.types import Message, CallbackQuery
-from bot_users.class_user import BotUser
-from sheets_example import insert_values
-from bot_users.messages import *
-from datetime import datetime
+from init.sheets_example import insert_values
+from init.class_user import BotUser
+from init.messages import *
+from init.db_funcs import *
 from decouple import config
-from loguru import logger
 from typing import Dict
-from db_funcs import *
 import telebot
 
 

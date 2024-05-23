@@ -2,8 +2,6 @@ from telebot.types import Chat
 from datetime import datetime
 
 
-admin_list = [2010916504]
-
 class BotUser:
     """ Class: Telegram bot's user """
 
