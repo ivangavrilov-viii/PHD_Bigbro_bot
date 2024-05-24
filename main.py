@@ -1,5 +1,5 @@
 from telebot.types import Message, CallbackQuery
-from init.sheets_example import insert_values
+from init.sheets_actions import insert_values
 from init.class_user import BotUser
 from init.messages import *
 from init.db_funcs import *
