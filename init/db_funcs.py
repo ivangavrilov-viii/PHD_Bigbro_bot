@@ -117,3 +117,19 @@ def get_all_user_in_db():
     except sqlite3.Error as error:
         logger.error(f'ERROR | Error with checking user in DB: {error}')
     return False
+
+
+def get_all_user():
+    """ GET ALL USERs IN DB """
+
+    try:
+        db = sqlite3.connect(db_name)
+        cursor = db.cursor()
+        cursor.execute(f"SELECT * FROM users")
+        response = cursor.fetchall()
+        cursor.close()
+        if response:
+            return response
+    except sqlite3.Error as error:
+        logger.error(f'ERROR | Error with checking user in DB: {error}')
+    return False
